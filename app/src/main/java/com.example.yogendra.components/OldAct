@@ -1,0 +1,58 @@
+/*
+final ArrayList<File> mySongs;
+        ArrayList<File>tempSongs=new ArrayList<Fi
+
+                if (System.getenv("SECONDARY_STORAGE")!=null) {
+                    tempSongs= findSong(new File(System.getenv("SECONDARY_STORAGE")));
+                    tempSongs.addAll(tempSongs);
+                    tempSongs.addAll(findSong(Environment.getExternalStorageDirectory()));
+                    mySongs=(ArrayList)tempSongs.clone();
+                }else{
+                    mySongs = findSong(Environment.getExternalStorageDirectory());
+                }
+                //clearing temp arraylist
+                tempSongs.clear();
+
+
+                cnst.Playlist=new String[mySongs.size()];le>();
+
+       */
+
+               /*
+               for (int i=0;i<mySongs.size();i++)
+                   cnst.Playlist[i]=mySongs.get(i).getName().toString().replace(".mp3","").replace(".wav","").replace(".ogg","").replace(".3gp","").replace(".wma","");
+
+               for (File tfile:fsongs) {
+                   Log.i("MainActivity", "fsongs" + tfile);
+               }
+               for (File tfile:mySongs){
+                   Log.i("MainActivity", "mySongs" + tfile);
+               }
+       */
+/*
+
+public ArrayList<File> findSong(File root){
+
+        ArrayList<File> al=new ArrayList<File>();
+        File[] files=root.listFiles();
+        for(File sFile : files){
+            if(sFile.isDirectory() && !sFile.isHidden()){
+
+                al.addAll(findSong(sFile));
+            }
+            else{
+                if (
+                        sFile.getName().endsWith(".mp3") ||
+                                sFile.getName().endsWith(".wav") ||
+                                sFile.getName().endsWith(".m4a") ||
+                                sFile.getName().endsWith(".3gp") ||
+                                sFile.getName().endsWith(".ogg") ||
+                                sFile.getName().endsWith(".wma")
+                        )
+                    al.add(sFile);}
+        }
+        return al;
+    }
+
+
+    */
